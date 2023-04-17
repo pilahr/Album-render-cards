@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Outfit&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  color: #272626;
+}
+
+body {
+  background-color: #f43268;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 22.5rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+}
+.card > .card__header-section {
+  position: relative;
+}
+.card > .card__header-section > .card__image {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+}
+.card > .card__header-section > .card__rating {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 0.75rem;
+  font-weight: 700;
+}
+.card > .card__content {
+  padding: 1.5rem;
+}
+.card > .card__content > .card__heading {
+  font-size: 2.25rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.card > .card__content > .card__description {
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card > .card__content > .card__description > .card__description-text {
+  color: #989b9e;
+}
+.card > .card__content > .card__line {
+  border: 1px solid #d8dadb;
+  margin: 1rem 0;
+}
+.card > .card__content > .card__genres {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.card > .card__content > .card__genre-values {
+  font-size: 1.125rem;
+  color: #989b9e;
+}

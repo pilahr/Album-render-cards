@@ -1,0 +1,64 @@
+@use "./variables" as *;
+
+.card {
+  width: 100%;
+  max-width: 22.5rem;
+  background-color: $color-tint-2;
+  border-radius: 0.5rem;
+
+  > .card__header-section {
+    position: relative;
+
+    > .card__image {
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%;
+    }
+
+    > .card__rating {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: $color-tint-6;
+      color: $color-tint-1;
+      font-size: $font-size-large;
+      padding: 0.75rem;
+      font-weight: 700;
+    }
+  }
+
+  > .card__content {
+    padding: 1.5rem;
+
+    > .card__heading {
+      font-size: $font-size-largest;
+      font-family: $font-heading;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    > .card__description {
+      font-size: $font-size-regular;
+      display: flex;
+      justify-content: space-between;
+
+      > .card__description-text {
+        color: $color-tint-4;
+      }
+    }
+
+    > .card__line {
+      border: 1px solid $color-tint-3;
+      margin: 1rem 0;
+    }
+
+    > .card__genres {
+      font-size: $font-size-small;
+      margin-bottom: 0.5rem;
+    }
+
+    > .card__genre-values {
+      font-size: $font-size-small;
+      color: $color-tint-4;
+    }
+  }
+}
